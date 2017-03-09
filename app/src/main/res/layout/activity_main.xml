@@ -8,12 +8,14 @@
     android:orientation="vertical"
     tools:context="com.example.ahuang.viewandgroup.MainActivity">
 
+
+
     <TextView
         android:id="@+id/viewMeasure"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:gravity="center"
         android:background="#dfabad"
-        android:textColor="#ffffff"
-        android:text="View的测量"/>
+        android:gravity="center"
+        android:text="View的测量"
+        android:textColor="#ffffff"/>
 </LinearLayout>

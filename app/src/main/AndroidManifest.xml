@@ -17,6 +17,8 @@
         </activity>
         <activity android:name=".viewmeasure.ViewMeasureActivity">
         </activity>
+        <activity android:name=".viewmeasure.MeasureViewActivity">
+        </activity>
     </application>
 
 </manifest>

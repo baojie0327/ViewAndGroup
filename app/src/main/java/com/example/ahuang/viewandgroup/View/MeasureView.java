@@ -5,6 +5,7 @@ package com.example.ahuang.viewandgroup.View; /**
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 
 /**
@@ -33,8 +34,8 @@ public class MeasureView extends View {
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        // super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-     //   setMeasuredDimension(measureWidth(widthMeasureSpec));
+        //  super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+        setMeasuredDimension(measureWidth(widthMeasureSpec), measureHeight(heightMeasureSpec));
     }
 
     /**
@@ -53,11 +54,38 @@ public class MeasureView extends View {
         } else {
             width = 200;
             if (mode == MeasureSpec.AT_MOST) {
-                width=Math.max(size,width);
+                width = Math.max(size, width);
             }
         }
+        Log.d("hbj", "width=" + width);
         return width;
     }
 
+    /**
+     * 获得测量的高度
+     *
+     * @param heightMeasureSpec
+     * @return
+     */
+    private int measureHeight(int heightMeasureSpec) {
+        int height = 0;
+        int mode = MeasureSpec.getMode(heightMeasureSpec); //测量模式
+        int size = MeasureSpec.getSize(heightMeasureSpec); //测量的尺寸
+        if (mode == MeasureSpec.EXACTLY) {
+            height = size;
+        } else {
+            height = 200;
+            if (mode == MeasureSpec.AT_MOST) {
+                height = Math.min(height, size);
+            }
+        }
+        Log.d("hbj", "height=" + height);
+        return height;
+    }
 
+//    @Override
+//    protected void onDraw(Canvas canvas) {
+//        super.onDraw(canvas);
+//        canvas.drawColor(Color.GREEN);
+//    }
 }

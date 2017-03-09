@@ -12,12 +12,13 @@ import com.example.ahuang.viewandgroup.viewmeasure.ViewMeasureActivity;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Bind(R.id.viewMeasure)
     TextView mViewMeasure;
     @Bind(R.id.activity_main)
     LinearLayout mActivityMain;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,9 +30,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()){
+        switch (view.getId()) {
             case R.id.viewMeasure:
-                Intent intent_measure=new Intent(MainActivity.this, ViewMeasureActivity.class);
+                Intent intent_measure = new Intent(MainActivity.this, ViewMeasureActivity.class);
                 startActivity(intent_measure);
                 break;
         }
