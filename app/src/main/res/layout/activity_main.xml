@@ -8,14 +8,18 @@
     android:orientation="vertical"
     tools:context="com.example.ahuang.viewandgroup.MainActivity">
 
-
-
-    <TextView
-        android:id="@+id/viewMeasure"
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleView"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="#dfabad"
-        android:gravity="center"
-        android:text="View的测量"
-        android:textColor="#ffffff"/>
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/viewMeasure"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:background="#dfabad"-->
+        <!--android:gravity="center"-->
+        <!--android:text="View的测量"-->
+        <!--android:textColor="#ffffff"/>-->
 </LinearLayout>
