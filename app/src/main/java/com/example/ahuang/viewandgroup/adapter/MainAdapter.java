@@ -5,6 +5,7 @@ package com.example.ahuang.viewandgroup.adapter; /**
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,21 +39,21 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MyViewHolder> 
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(mContext).inflate(R.layout.item_main,
                 parent, false);
-        MyViewHolder viewHolder=new MyViewHolder(view);
-        viewHolder.tv_title=(TextView) view.findViewById(R.id.viewMeasure);
-        viewHolder.ll_listen=(LinearLayout) view.findViewById(R.id.ll_listen);
+        MyViewHolder viewHolder = new MyViewHolder(view);
+        viewHolder.tv_title = (TextView) view.findViewById(R.id.viewMeasure);
+      //  viewHolder.ll_listen = (LinearLayout) view.findViewById(R.id.ll_listen);
         return viewHolder;
     }
 
     @Override
     public void onBindViewHolder(final MyViewHolder holder, int position) {
+        Log.d("hbj","position=" + position);
         holder.tv_title.setText(list.get(position));
         // 如果设置了回调，则设置点击事件
         if (mOnItemClickLitener != null) {
-            holder.ll_listen.setOnClickListener(new View.OnClickListener() {
+            holder.tv_title.setOnClickListener(new View.OnClickListener() {
                 @Override
-                public void onClick(View v)
-                {
+                public void onClick(View v) {
                     int pos = holder.getLayoutPosition();
                     mOnItemClickLitener.onItemClick(holder.itemView, pos);
                 }

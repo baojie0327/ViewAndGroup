@@ -15,9 +15,11 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".viewmeasure.ViewMeasureActivity">
+        <activity android:name=".activity.ViewMeasureActivity">
         </activity>
         <activity android:name=".viewmeasure.MeasureViewActivity">
+        </activity>
+        <activity android:name=".activity.DrawActivity">
         </activity>
     </application>
 

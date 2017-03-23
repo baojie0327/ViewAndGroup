@@ -1,4 +1,4 @@
-package com.example.ahuang.viewandgroup.viewmeasure;
+package com.example.ahuang.viewandgroup.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

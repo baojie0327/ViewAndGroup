@@ -5,11 +5,13 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import com.example.ahuang.viewandgroup.activity.DrawActivity;
 import com.example.ahuang.viewandgroup.adapter.MainAdapter;
-import com.example.ahuang.viewandgroup.viewmeasure.ViewMeasureActivity;
+import com.example.ahuang.viewandgroup.activity.ViewMeasureActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     LinearLayout mActivityMain;
     @Bind(R.id.recycleView)
     RecyclerView mRecycleView;
-    private List<String> list = new ArrayList<>();
+    private List<String> list = new ArrayList<String>();
     private MainAdapter mAdapter;
 
 
@@ -35,6 +37,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ButterKnife.bind(this);
         //  mViewMeasure.setOnClickListener(this);
         list.add("View的测量");
+        list.add("View的绘制");
+
+        Log.d("hbj",list.size()+"");
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         mRecycleView.setLayoutManager(layoutManager);
@@ -45,10 +50,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onItemClick(View view, int position) {
                 switch (position) {
-                    case 0:
+                    case 0: //view的测量
                         Intent intent_measure = new Intent(MainActivity.this, ViewMeasureActivity.class);
                         startActivity(intent_measure);
                         break;
+                    case 1: //view的绘制
+                        Intent intent_draw = new Intent(MainActivity.this, DrawActivity.class);
+                        startActivity(intent_draw);
+                        break;
+
                 }
             }
         });
