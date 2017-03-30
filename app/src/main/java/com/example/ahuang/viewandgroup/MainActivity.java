@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import com.example.ahuang.viewandgroup.activity.CanvasOperationActivity;
 import com.example.ahuang.viewandgroup.activity.DrawActivity;
 import com.example.ahuang.viewandgroup.adapter.MainAdapter;
 import com.example.ahuang.viewandgroup.activity.ViewMeasureActivity;
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //  mViewMeasure.setOnClickListener(this);
         list.add("View的测量");
         list.add("View的绘制");
+        list.add("Canvas操作");
 
         Log.d("hbj",list.size()+"");
 
@@ -57,6 +59,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     case 1: //view的绘制
                         Intent intent_draw = new Intent(MainActivity.this, DrawActivity.class);
                         startActivity(intent_draw);
+                        break;
+                    case 2:  //canvas操作
+                        Intent intent_canvas=new Intent(MainActivity.this, CanvasOperationActivity.class);
+                        startActivity(intent_canvas);
                         break;
 
                 }

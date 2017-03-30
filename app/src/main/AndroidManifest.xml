@@ -21,6 +21,8 @@
         </activity>
         <activity android:name=".activity.DrawActivity">
         </activity>
+        <activity android:name=".activity.CanvasOperationActivity">
+        </activity>
     </application>
 
 </manifest>
