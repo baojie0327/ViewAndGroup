@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import com.example.ahuang.viewandgroup.activity.BazierActivity;
 import com.example.ahuang.viewandgroup.activity.CanvasOperationActivity;
 import com.example.ahuang.viewandgroup.activity.DrawActivity;
 import com.example.ahuang.viewandgroup.activity.DrawPathActivity;
@@ -42,6 +43,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         list.add("View的绘制");
         list.add("Canvas操作");
         list.add("Path的绘制");
+        list.add("贝赛尔曲线");
 
         Log.d("hbj",list.size()+"");
 
@@ -69,6 +71,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     case 3: //path绘制
                         Intent intent_path=new Intent(MainActivity.this, DrawPathActivity.class);
                         startActivity(intent_path);
+                        break;
+                    case 4: //path绘制
+                        Intent intent_bazier=new Intent(MainActivity.this, BazierActivity.class);
+                        startActivity(intent_bazier);
                         break;
 
                 }

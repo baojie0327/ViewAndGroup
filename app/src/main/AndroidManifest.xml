@@ -25,6 +25,8 @@
         </activity>
         <activity android:name=".activity.DrawPathActivity">
         </activity>
+        <activity android:name=".activity.BazierActivity">
+        </activity>
     </application>
 
 </manifest>
