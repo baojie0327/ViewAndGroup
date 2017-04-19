@@ -3,6 +3,7 @@ Android 之View测量，绘制，自定义VIew，ViewGroup的测量，绘制，�
 
 基本图形的绘制
 ![](https://github.com/baojie0327/ViewAndGroup/blob/master/images/basic.jpg)
+
 二阶贝塞尔曲线
 ```
 @Override
@@ -30,6 +31,7 @@ Android 之View测量，绘制，自定义VIew，ViewGroup的测量，绘制，�
   }
   ```
 ![](https://github.com/baojie0327/ViewAndGroup/blob/master/images/baizer_two.gif)
+
 三阶贝赛尔曲线
 ```
 @Override
