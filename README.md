@@ -1,7 +1,6 @@
 # ViewAndGroup
-Android 之View测量，绘制，自定义VIew，ViewGroup的测量，绘制，自定义ViewGroup
-
 基本图形的绘制
+
 ![](https://github.com/baojie0327/ViewAndGroup/blob/master/images/basic.jpg)
 
 二阶贝塞尔曲线
