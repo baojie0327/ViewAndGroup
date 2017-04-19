@@ -27,6 +27,8 @@
         </activity>
         <activity android:name=".activity.BazierActivity">
         </activity>
+        <activity android:name=".activity.CustomViewBasicActivity">
+        </activity>
     </application>
 
 </manifest>
