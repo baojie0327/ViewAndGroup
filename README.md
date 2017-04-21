@@ -67,6 +67,41 @@
 自定义View
 
 ```
+<resources>
+    <declare-styleable name="TopBar">
+        <!--中间title的自定义属性-->
+        <attr name="mTitle" format="string"></attr>
+        <attr name="mTitleSize" format="dimension"></attr>
+        <attr name="mTitleColor" format="color"></attr>
+        <!--左边图片的自发定义属性-->
+        <attr name="mLeftBackGround" format="reference"></attr>
+        <!--右边TextView的自定义属性-->
+        <attr name="rightTitle" format="string"></attr>
+        <attr name="rightTitleSize" format="dimension"></attr>
+        <attr name="rightTextColor" format="color"></attr>
+    </declare-styleable>
+</resources>
+```
+```
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <com.example.ahuang.viewandgroup.View.TopBar
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            custom:mLeftBackGround="@mipmap/back_icon"
+            custom:mTitle="购物车"
+            custom:mTitleColor="@android:color/white"
+            custom:mTitleSize="5sp"
+            custom:rightTextColor="@android:color/white"
+            custom:rightTitle="编辑"
+            custom:rightTitleSize="5sp"/>
+    </LinearLayout>
+    ```
+![](https://github.com/baojie0327/ViewAndGroup/blob/master/images/custom_one.gif)    
+
+```
 @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
