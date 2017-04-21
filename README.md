@@ -62,3 +62,21 @@
   ```
 
 ![](https://github.com/baojie0327/ViewAndGroup/blob/master/images/baizer_three.gif)
+
+自定义View
+```
+@Override
+    protected void onDraw(Canvas canvas) {
+        super.onDraw(canvas);
+        for (int i = 0; i < mRectCount; i++) {
+            mRandom = Math.random();
+            canvas.drawRect(mRectWidth * i + offset, (float) (mRectHeight * mRandom), mRectWidth * (i+1),
+                   mRectHeight, mPaint);
+        }
+        postInvalidateDelayed(300);
+    }
+    ```
+    
+    ![](https://github.com/baojie0327/ViewAndGroup/blob/master/images/20170421024212u2493-.gif)
+    
+    
