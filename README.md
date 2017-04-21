@@ -76,7 +76,8 @@
         }
         postInvalidateDelayed(300);
     }
-    ```
+    
+  ```
     
     ![](https://github.com/baojie0327/ViewAndGroup/blob/master/images/newcustom.gif)
     
