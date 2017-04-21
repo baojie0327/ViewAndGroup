@@ -64,6 +64,7 @@
 ![](https://github.com/baojie0327/ViewAndGroup/blob/master/images/baizer_three.gif)
 
 自定义View
+
 ```
 @Override
     protected void onDraw(Canvas canvas) {
