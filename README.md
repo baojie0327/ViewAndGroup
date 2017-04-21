@@ -81,9 +81,7 @@
         <attr name="rightTextColor" format="color"></attr>
     </declare-styleable>
 </resources>
-```
 
-```
 <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -99,11 +97,11 @@
             custom:rightTitle="编辑"
             custom:rightTitleSize="5sp"/>
     </LinearLayout>
-    ```
+ ```
     
 ![](https://github.com/baojie0327/ViewAndGroup/blob/master/images/custom_one.gif) 
 
-
+自定义View
 ```
 @Override
     protected void onDraw(Canvas canvas) {
