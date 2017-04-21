@@ -82,6 +82,7 @@
     </declare-styleable>
 </resources>
 ```
+
 ```
 <LinearLayout
         android:layout_width="match_parent"
@@ -99,7 +100,9 @@
             custom:rightTitleSize="5sp"/>
     </LinearLayout>
     ```
-![](https://github.com/baojie0327/ViewAndGroup/blob/master/images/custom_one.gif)    
+    
+![](https://github.com/baojie0327/ViewAndGroup/blob/master/images/custom_one.gif) 
+
 
 ```
 @Override
