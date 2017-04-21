@@ -77,6 +77,6 @@
     }
     ```
     
-    ![](https://github.com/baojie0327/ViewAndGroup/blob/master/images/20170421024212u2493-.gif)
+    ![](https://github.com/baojie0327/ViewAndGroup/blob/master/images/newcustom.gif)
     
     
