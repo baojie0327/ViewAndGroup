@@ -29,6 +29,8 @@
         </activity>
         <activity android:name=".activity.CustomViewBasicActivity">
         </activity>
+        <activity android:name=".activity.CustomViewActivity">
+        </activity>
     </application>
 
 </manifest>

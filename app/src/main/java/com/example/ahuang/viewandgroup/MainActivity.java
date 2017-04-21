@@ -11,11 +11,12 @@ import android.widget.LinearLayout;
 
 import com.example.ahuang.viewandgroup.activity.BazierActivity;
 import com.example.ahuang.viewandgroup.activity.CanvasOperationActivity;
+import com.example.ahuang.viewandgroup.activity.CustomViewActivity;
 import com.example.ahuang.viewandgroup.activity.CustomViewBasicActivity;
 import com.example.ahuang.viewandgroup.activity.DrawActivity;
 import com.example.ahuang.viewandgroup.activity.DrawPathActivity;
-import com.example.ahuang.viewandgroup.adapter.MainAdapter;
 import com.example.ahuang.viewandgroup.activity.ViewMeasureActivity;
+import com.example.ahuang.viewandgroup.adapter.MainAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,6 +47,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         list.add("Path的绘制");
         list.add("贝赛尔曲线");
         list.add("自定义View基础");
+        list.add("自定义View举例");
 
         Log.d("hbj",list.size()+"");
 
@@ -81,6 +83,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     case 5: //自定义View基础
                         Intent intent_basic=new Intent(MainActivity.this, CustomViewBasicActivity.class);
                         startActivity(intent_basic);
+                        break;
+                    case 6: //自定义View基础
+                        Intent intent_custom=new Intent(MainActivity.this, CustomViewActivity.class);
+                        startActivity(intent_custom);
                         break;
 
                 }

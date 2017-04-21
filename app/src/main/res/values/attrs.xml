@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TopBar">
+        <!--中间title的自定义属性-->
+        <attr name="mTitle" format="string"></attr>
+        <attr name="mTitleSize" format="dimension"></attr>
+        <attr name="mTitleColor" format="color"></attr>
+        <!--左边图片的自发定义属性-->
+        <attr name="mLeftBackGround" format="reference"></attr>
+        <!--右边TextView的自定义属性-->
+        <attr name="rightTitle" format="string"></attr>
+        <attr name="rightTitleSize" format="dimension"></attr>
+        <attr name="rightTextColor" format="color"></attr>
+    </declare-styleable>
+</resources>

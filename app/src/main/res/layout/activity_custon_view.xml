@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_custon_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ahuang.viewandgroup.activity.CustomViewActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <com.example.ahuang.viewandgroup.View.MyTextView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="扩展的TextView"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+      <!--  <com.example.ahuang.viewandgroup.View.TopBar
+            android:id="@+id/topBar"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            custom:mLeftBackGround="@mipmap/back_icon"
+            custom:mTitle="购物车"
+            custom:mTitleColor="@android:color/white"
+            custom:mTitleSize="5sp"
+            custom:rightTextColor="@android:color/white"
+            custom:rightTitle="编辑"
+            custom:rightTitleSize="5sp"/>-->
+        <include layout="@layout/head_layout"></include>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <com.example.ahuang.viewandgroup.View.AudioBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/audioBar"/>
+    </LinearLayout>
+</LinearLayout>
