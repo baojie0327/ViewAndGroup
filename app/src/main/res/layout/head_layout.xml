@@ -3,7 +3,7 @@
               xmlns:custom="http://schemas.android.com/apk/res-auto"
               android:layout_width="match_parent"
               android:layout_height="45dp">
-    <com.example.ahuang.viewandgroup.View.TopBar
+    <com.example.ahuang.viewandgroup.view.TopBar
         android:id="@+id/topBar"
         android:layout_width="match_parent"
         android:layout_height="45dp"

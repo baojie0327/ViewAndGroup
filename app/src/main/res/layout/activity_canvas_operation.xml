@@ -8,7 +8,7 @@
     android:orientation="vertical"
     tools:context="com.example.ahuang.viewandgroup.activity.CanvasOperationActivity">
 
-    <com.example.ahuang.viewandgroup.View.CanvasOperationView
+    <com.example.ahuang.viewandgroup.view.CanvasOperationView
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

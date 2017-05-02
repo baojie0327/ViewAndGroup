@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ahuang.viewandgroup.activity.XiaoMiSetpActivity">
+
+    <com.example.ahuang.viewandgroup.view.XiaoMiStep
+        android:id="@+id/xiaoMiStep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:backGroundColor="#0FA9C1"
+        custom:lineColor="#8ED8E5"
+        custom:othetTextColor="#8ED8E5"
+        custom:outerCircleColor="#8ED8E5"
+        custom:outerDotColor="#ffffff"
+        custom:ringColor="#8ED8E5"
+        custom:stepNumColor="#ffffff"/>
+
+</LinearLayout>

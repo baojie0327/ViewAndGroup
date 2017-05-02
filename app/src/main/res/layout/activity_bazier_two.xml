@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
-        <com.example.ahuang.viewandgroup.View.BezierTwo
+        <com.example.ahuang.viewandgroup.view.BezierTwo
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
     </LinearLayout>
@@ -20,7 +20,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="vertical">
-        <com.example.ahuang.viewandgroup.View.BezierThree
+        <com.example.ahuang.viewandgroup.view.BezierThree
             android:id="@+id/bezierThree"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>

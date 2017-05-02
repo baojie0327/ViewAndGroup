@@ -7,7 +7,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 import com.example.ahuang.viewandgroup.R;
-import com.example.ahuang.viewandgroup.View.BezierThree;
+import com.example.ahuang.viewandgroup.view.BezierThree;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;

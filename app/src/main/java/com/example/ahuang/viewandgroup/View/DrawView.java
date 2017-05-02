@@ -1,4 +1,4 @@
-package com.example.ahuang.viewandgroup.View; /**
+package com.example.ahuang.viewandgroup.view; /**
  * DrawView  2017-03-17
  * Copyright (c) 2017 HYB Co.Ltd. All right reserved.
  */

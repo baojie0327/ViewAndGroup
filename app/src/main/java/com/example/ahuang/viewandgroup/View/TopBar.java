@@ -1,4 +1,4 @@
-package com.example.ahuang.viewandgroup.View; /**
+package com.example.ahuang.viewandgroup.view; /**
  * TopBar   2017-04-20
  * Copyright (c) 2017 SSRJ Co.Ltd. All right reserved.
  */

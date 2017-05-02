@@ -6,7 +6,7 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.example.ahuang.viewandgroup.R;
-import com.example.ahuang.viewandgroup.View.TopBar;
+import com.example.ahuang.viewandgroup.view.TopBar;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;

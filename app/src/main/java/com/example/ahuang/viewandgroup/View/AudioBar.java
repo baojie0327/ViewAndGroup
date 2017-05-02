@@ -1,4 +1,4 @@
-package com.example.ahuang.viewandgroup.View; /**
+package com.example.ahuang.viewandgroup.view; /**
  * AudioBar  2017-04-21
  * Copyright (c) 2017 SSRJ Co.Ltd. All right reserved.
  */

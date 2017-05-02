@@ -1,4 +1,4 @@
-package com.example.ahuang.viewandgroup.View; /**
+package com.example.ahuang.viewandgroup.view; /**
  * BasicCustomView  2017-04-19
  * Copyright (c) 2017 SSRJ Co.Ltd. All right reserved.
  */

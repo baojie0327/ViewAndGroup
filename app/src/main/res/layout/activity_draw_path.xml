@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.ahuang.viewandgroup.activity.DrawPathActivity">
-    <com.example.ahuang.viewandgroup.View.DrawPath
+    <com.example.ahuang.viewandgroup.view.DrawPath
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

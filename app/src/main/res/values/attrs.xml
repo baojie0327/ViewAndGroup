@@ -12,4 +12,21 @@
         <attr name="rightTitleSize" format="dimension"></attr>
         <attr name="rightTextColor" format="color"></attr>
     </declare-styleable>
+    <!--Xiaomi-->
+    <declare-styleable name="XiaoMiStep">
+        <!--背景-->
+        <attr name="backGroundColor" format="color"></attr>
+        <!--最外层圆-->
+        <attr name="outerCircleColor" format="color"></attr>
+        <!--外层圆上的小圆点颜色-->
+        <attr name="outerDotColor" format="color"></attr>
+        <!--竖线的颜色-->
+        <attr name="lineColor" format="color"></attr>
+        <!--圆环的颜色-->
+        <attr name="ringColor" format="color"></attr>
+        <!--步数颜色-->
+        <attr name="stepNumColor" format="color"></attr>
+        <!--其他字的颜色-->
+        <attr name="othetTextColor" format="color"></attr>
+    </declare-styleable>
 </resources>

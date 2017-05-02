@@ -1,4 +1,4 @@
-package com.example.ahuang.viewandgroup.View; /**
+package com.example.ahuang.viewandgroup.view; /**
  * CanvasOperationView  2017-03-25
  * Copyright (c) 2017 HYB Co.Ltd. All right reserved.
  */

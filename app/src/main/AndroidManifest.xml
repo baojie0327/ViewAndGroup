@@ -31,6 +31,9 @@
         </activity>
         <activity android:name=".activity.CustomViewActivity">
         </activity>
+        <activity android:name=".activity.XiaoMiSetpActivity"
+        android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
     </application>
 
 </manifest>
