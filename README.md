@@ -181,5 +181,4 @@
         }
     }
     ```
-    
 ![](https://github.com/baojie0327/ViewAndGroup/blob/master/images/xiaomisport.gif)
