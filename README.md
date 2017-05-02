@@ -117,5 +117,69 @@
   ```
     
 ![](https://github.com/baojie0327/ViewAndGroup/blob/master/images/newcustom.gif)
+
+仿小米运动
+
+```
+@Override
+    protected void onDraw(Canvas canvas) {
+        super.onDraw(canvas);
+        //绘制底层背景
+        mPaint.setColor(background_color);
+        mPaint.setStyle(Paint.Style.FILL);
+        RectF rectF_back = new RectF(0, 0, widthBg, heightBg);
+        canvas.drawRect(rectF_back, mPaint);
+        //绘制最外层的圆
+        mPaint.setColor(outer_circle_color);
+        mPaint.setStyle(Paint.Style.STROKE);
+        mPaint.setStrokeWidth(3);
+        canvas.drawCircle(widthBg / 2, heightBg / 2, ra_out_circle, mPaint);
+        //绘制圆上的小圆点
+        pointPaint.setColor(outer_dot_color);
+        pointPaint.setStrokeWidth(10);
+        canvas.drawCircle((float) (widthBg / 2 + ra_out_circle * Math.cos(angle * 3.14 / 180)), (float) (heightBg / 2 + ra_out_circle * Math.sin(angle * 3.14 / 180)), 10, pointPaint);
+        //画line
+        drawLines(canvas);
+        //画圆弧
+        arcPaint.setStyle(Paint.Style.STROKE);
+        arcPaint.setStrokeWidth(30);
+        arcPaint.setColor(ring_color);
+        RectF arcRect = new RectF((widthBg / 2 - ra_inner_circle + line_length / 2), (heightBg / 2 - ra_inner_circle + line_length / 2), (widthBg / 2 + ra_inner_circle - line_length / 2), (heightBg / 2 + ra_inner_circle - line_length / 2));
+        canvas.drawArc(arcRect, -90, currentFootNumPre, false, arcPaint);
+
+        //绘制步数
+        textPaint.setColor(step_num_color);
+        textPaint.setStrokeWidth(25);
+        textPaint.setTextSize(widthBg / 6);
+        canvas.drawText(String.valueOf(currentFootNum), (widthBg / 3 - 50), heightBg / 2 + 50, textPaint);
+        textPaint.setStrokeWidth(10);
+        textPaint.setColor(othet_text_color);
+        textPaint.setTextSize(widthBg / 20);
+        canvas.drawText("步", (widthBg / 2 + 200), heightBg / 2 + 50, textPaint);
+        //绘制公里
+        currentDistance = (float) (myFootNum * 6.4 / 8000);
+        //小数点后一位
+        java.text.DecimalFormat df = new java.text.DecimalFormat("#.0");
+        String currentDis = df.format(currentDistance);
+        canvas.drawText(currentDis + "公里", (widthBg / 3 - 30), heightBg / 2 + 150, textPaint);
+        //中间竖线
+        mPaint.setStrokeWidth(8);
+        canvas.drawLine(widthBg / 2 + 10, heightBg / 2 + 110, widthBg / 2 + 10, heightBg / 2 + 155, mPaint);
+        //绘制卡路里
+        currentCal = myFootNum * 230 / 8000;
+        canvas.drawText(String.valueOf(currentCal) + "千卡", (widthBg / 2 + 40), heightBg / 2 + 150, textPaint);
+
+
+    }
+
+    private void drawLines(Canvas canvas) {
+        mPaint.setColor(line_color);
+        mPaint.setStrokeWidth(4);
+        for (int i = 0; i < 360; i++) {
+            canvas.drawLine(widthBg / 2, (heightBg / 2 - ra_inner_circle), widthBg / 2, (heightBg / 2 - ra_inner_circle + line_length), mPaint);
+            canvas.rotate(1, widthBg / 2, heightBg / 2);
+        }
+    }
+    ```
     
-    
+![](https://github.com/baojie0327/ViewAndGroup/blob/master/images/xiaomisport.gif)
