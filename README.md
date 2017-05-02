@@ -180,5 +180,6 @@
             canvas.rotate(1, widthBg / 2, heightBg / 2);
         }
     }
-    ```
+```
+
 ![](https://github.com/baojie0327/ViewAndGroup/blob/master/images/xiaomisport.gif)
