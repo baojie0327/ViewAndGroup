@@ -246,5 +246,10 @@
         //  Log.d("TAG", "pointX = " + pointX + "||pointY = " + pointY);
         canvas.drawCircle(pointX, pointY, dotSize, pointPaint);
         ```
-      ![](https://github.com/baojie0327/ViewAndGroup/blob/master/images/circleprogress.gif)
+        
+     ![](https://github.com/baojie0327/ViewAndGroup/blob/master/images/circleprogress.gif)
+     
+     
+     
+     
 
