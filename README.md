@@ -248,5 +248,5 @@
         
         ```
         
-     ![](https://github.com/baojie0327/ViewAndGroup/blob/master/images/circleprogress.gif)
+     ![circlrprogress](https://github.com/baojie0327/ViewAndGroup/blob/master/images/circleprogress.gif)
       
