@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_custom_view_group"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ahuang.viewandgroup.activity.CustomViewGroupActivity">
+    <com.example.ahuang.viewandgroup.view.CustomViewGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/color_one"/>
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/color_two"/>
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/color_three"/>
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/color_four"/>
+
+    </com.example.ahuang.viewandgroup.view.CustomViewGroup>
+
+</RelativeLayout>

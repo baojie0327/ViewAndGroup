@@ -11,8 +11,10 @@ import android.widget.LinearLayout;
 
 import com.example.ahuang.viewandgroup.activity.BazierActivity;
 import com.example.ahuang.viewandgroup.activity.CanvasOperationActivity;
+import com.example.ahuang.viewandgroup.activity.CircleProgressActivity;
 import com.example.ahuang.viewandgroup.activity.CustomViewActivity;
 import com.example.ahuang.viewandgroup.activity.CustomViewBasicActivity;
+import com.example.ahuang.viewandgroup.activity.CustomViewGroupActivity;
 import com.example.ahuang.viewandgroup.activity.DrawActivity;
 import com.example.ahuang.viewandgroup.activity.DrawPathActivity;
 import com.example.ahuang.viewandgroup.activity.ViewMeasureActivity;
@@ -50,6 +52,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         list.add("自定义View基础");
         list.add("自定义View举例");
         list.add("仿小米运动计步");
+        list.add("自定义ViewGroup");
+        list.add("CircleProgress");
 
         Log.d("hbj",list.size()+"");
 
@@ -93,6 +97,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     case 7: //小米计步
                         Intent intent_xiaomi=new Intent(MainActivity.this, XiaoMiSetpActivity.class);
                         startActivity(intent_xiaomi);
+                        break;
+                    case 8: //自定义ViewGroup
+                        Intent intent_group=new Intent(MainActivity.this, CustomViewGroupActivity.class);
+                        startActivity(intent_group);
+                        break;
+                    case 9:
+                        startActivity(new Intent(MainActivity.this, CircleProgressActivity.class));
                         break;
 
                 }

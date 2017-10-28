@@ -49,11 +49,11 @@ public class MeasureView extends View {
         int mode = MeasureSpec.getMode(widthMeasureSpec); //获取测量模式
         int size = MeasureSpec.getSize(widthMeasureSpec);  //获取测量值
 
-        if (mode == MeasureSpec.EXACTLY) { //精准测量模式
+        if (mode == MeasureSpec.EXACTLY) { //精准测量模式,设置为具体数值或者match_parent时
             width = size;
         } else {
             width = 200;
-            if (mode == MeasureSpec.AT_MOST) {
+            if (mode == MeasureSpec.AT_MOST) {    //设置为wrap_content
                 width = Math.max(size, width);
             }
         }

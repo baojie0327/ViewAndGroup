@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ahuang.viewandgroup.activity.CircleProgressActivity">
+
+
+    <com.example.ahuang.viewandgroup.view.CircleProgress
+        android:id="@+id/circle_progress"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        app:ringColors="#E8E8E8"
+        app:dotColor="#ffffff"
+        app:ringprogressColor="#82D583"
+        app:textProgressColor="#666666"
+        app:textPercentColor="#666666"
+        app:texColor="#999999"
+        app:showProgressText="测量进度"
+        app:ringSize="8dp"
+        app:dotSize="8dp"
+        app:textProgressSize="47sp"
+        app:texSize="12sp"
+        app:texMarginSize="9dp"/>
+</LinearLayout>

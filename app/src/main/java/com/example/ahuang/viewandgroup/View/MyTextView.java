@@ -16,7 +16,7 @@ import android.widget.TextView;
  * @version 1.0.0
  * since 2017 04 20
  */
-public class MyTextView extends TextView{
+public class MyTextView extends android.support.v7.widget.AppCompatTextView{
 
     private Paint mPaint1,mPaint2;
 

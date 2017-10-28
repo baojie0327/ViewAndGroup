@@ -29,4 +29,48 @@
         <!--其他字的颜色-->
         <attr name="othetTextColor" format="color"></attr>
     </declare-styleable>
+
+    <!--CircleProgress-->
+    <declare-styleable name="CircleProgress">
+
+        <!--圆环的颜色-->
+        <attr name="ringColors" format="color"></attr>
+        <!--圆环的宽度-->
+        <attr name="ringSize" format="dimension"></attr>
+        <!--进度圆环的颜色-->
+        <attr name="ringprogressColor" format="color"></attr>
+
+        <!--圆环上的小圆点颜色-->
+        <attr name="dotColor" format="color"></attr>
+        <!--圆环上的小圆点大小-->
+        <attr name="dotSize" format="dimension"></attr>
+
+        <!--进度字体颜色-->
+        <attr name="textProgressColor" format="color"></attr>
+        <!--进度字体大小-->
+        <attr name="textProgressSize" format="dimension"></attr>
+
+
+        <!--百分号颜色-->
+        <attr name="textPercentColor" format="color"></attr>
+
+
+        <!--固定字体设置-->
+        <attr name="showProgressText" format="string"></attr>
+        <!--固定字体颜色-->
+        <attr name="texColor" format="color"></attr>
+        <!--固定字体大小-->
+        <attr name="texSize" format="dimension"></attr>
+
+        <!--文字之间的距离-->
+        <attr name="texMarginSize" format="dimension"></attr>
+
+        <!--固定字体大小-->
+        <attr name="setNumber" format="integer"></attr>
+
+
+    </declare-styleable>
+
+
+
 </resources>

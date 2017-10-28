@@ -31,8 +31,13 @@
         </activity>
         <activity android:name=".activity.CustomViewActivity">
         </activity>
-        <activity android:name=".activity.XiaoMiSetpActivity"
-        android:windowSoftInputMode="adjustPan|stateHidden">
+        <activity
+            android:name=".activity.XiaoMiSetpActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+        <activity android:name=".activity.CustomViewGroupActivity">
+        </activity>
+        <activity android:name=".activity.CircleProgressActivity">
         </activity>
     </application>
 
