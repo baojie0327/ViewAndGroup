@@ -237,16 +237,13 @@
             pointY = centre - (int) (radius * Math.sin(a));
         }
 
-     
-
         pointPaint.setColor(dot_color);
         pointPaint.setStyle(Paint.Style.FILL);
         pointPaint.setAntiAlias(true);  //消除锯齿
         pointPaint.setShadowLayer(10, 0, 0, Color.GRAY);
         //  Log.d("TAG", "pointX = " + pointX + "||pointY = " + pointY);
         canvas.drawCircle(pointX, pointY, dotSize, pointPaint);
-        
-        ```
-        
-     ![circlrprogress](https://github.com/baojie0327/ViewAndGroup/blob/master/images/circleprogress.gif)
+ ```
+       
+ ![](https://github.com/baojie0327/ViewAndGroup/blob/master/images/circleprogress.gif)
       
