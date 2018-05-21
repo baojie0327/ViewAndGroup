@@ -183,3 +183,67 @@
 ```
 
 ![](https://github.com/baojie0327/ViewAndGroup/blob/master/images/xiaomisport.gif)
+
+
+画CircleProgress
+
+```
+  //画圆弧
+        ringProgressPaint.setStyle(Paint.Style.STROKE);
+        ringProgressPaint.setStrokeWidth(ringSize);
+
+        //  ringProgressPaint.setColor(ring_progress_color);
+        RectF oval = new RectF(centre - radius, centre - radius, centre
+                + radius, centre + radius);  //用于定义的圆弧的形状和大小的界限
+
+        //创建一个渲染器
+        SweepGradient mSweepGradient=new SweepGradient(canvas.getWidth()/2
+                ,canvas.getHeight()/2,new int[]{Color.rgb(130,213,131),Color.rgb(150,251,196),Color.rgb(130,213,131)},null);
+        Matrix matrix=new Matrix();
+        matrix.setRotate(-90f,canvas.getWidth()/2,canvas.getHeight()/2);
+        mSweepGradient.setLocalMatrix(matrix);
+        ringProgressPaint.setShader(mSweepGradient);
+        canvas.drawArc(oval, 90, 360 * tempProgress / maxProgress, false, ringProgressPaint);
+
+        //画圆点
+        // 画进度点   30°角度 的弧度 = 2 * PI / 360 * 30
+        int rangle = 0;
+        if (tempProgress == 0) {
+            rangle = 360 / maxProgress;
+        } else {
+            rangle = 360 * (int) tempProgress / maxProgress;
+        }
+
+        double a = 0.0;//角度
+        int pointX = 0;
+        int pointY = 0;
+
+
+        if (rangle > 0 && rangle <= 90) {
+            a = 2 * Math.PI / 360 * (270 - rangle);
+            pointX = centre + (int) (radius * Math.cos(a));
+            pointY = centre - (int) (radius * Math.sin(a));
+        } else if (rangle > 90 && rangle <= 180) {
+            a = 2 * Math.PI / 360 * (rangle + 90);
+            pointX = centre + (int) (radius * Math.cos(a));
+            pointY = centre + (int) (radius * Math.sin(a));
+        } else if (rangle > 180 && rangle <= 270) {
+            a = 2 * Math.PI / 360 * (rangle);
+            pointX = centre - (int) (radius * Math.sin(a));
+            pointY = centre + (int) (radius * Math.cos(a));
+        } else if (rangle > 270 && rangle <= 360) {
+            a = 2 * Math.PI / 360 * (rangle - 90);
+            pointX = centre - (int) (radius * Math.cos(a));
+            pointY = centre - (int) (radius * Math.sin(a));
+        }
+
+        pointPaint.setColor(dot_color);
+        pointPaint.setStyle(Paint.Style.FILL);
+        pointPaint.setAntiAlias(true);  //消除锯齿
+        pointPaint.setShadowLayer(10, 0, 0, Color.GRAY);
+        //  Log.d("TAG", "pointX = " + pointX + "||pointY = " + pointY);
+        canvas.drawCircle(pointX, pointY, dotSize, pointPaint);
+ ```
+       
+ ![](https://github.com/baojie0327/ViewAndGroup/blob/master/images/circleprogress.gif)
+      
